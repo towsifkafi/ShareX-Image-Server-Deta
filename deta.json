@@ -10,7 +10,7 @@
         },
         {
             "key": "BINARY_CONTENT_TYPES",
-            "description": "Env to bypass the Deta binary uplaod bug",
+            "description": "Env to bypass the Deta binary upload bug",
             "value": "image/*,font/*",
             "required": false
         }
