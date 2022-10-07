@@ -1,7 +1,6 @@
 {
     "name": "ShareX-Image-Server-Deta",
     "description": "A ShareX image upload server hosted on deta.", 
-    "runtime": "nodejs14.x",
     "env": [
         {
             "key": "ENV_UPLOAD_KEY",
