@@ -1,0 +1,19 @@
+{
+    "name": "ShareX-Image-Server-Deta",
+    "description": "A ShareX image upload server hosted on deta.", 
+    "runtime": "nodejs14.x",
+    "env": [
+        {
+            "key": "ENV_UPLOAD_KEY",
+            "description": "The key that is required to upload from ShareX",
+            "value": "passwordd",
+            "required": true
+        },
+        {
+            "key": "BINARY_CONTENT_TYPES",
+            "description": "Env to bypass the Deta binary uplaod bug",
+            "value": "image/*,font/*",
+            "required": false
+        }
+    ]
+}

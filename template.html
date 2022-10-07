@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{FILE_NAME}</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#30acff">
+    <meta property="og:title" content="{FILE_NAME}">
+    <meta property="og:description" content="Uploaded at {UPLOAD_DATE}">
+    <meta property="og:image" content="{URL}">
+    <meta property="twitter:card" content="summary_large_image">
+    <style>
+        body {
+            background-color: #1d1d1d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'Trebuchet MS', sans-serif;
+        }
+
+        .img {
+            width: 840px;
+            float: left;
+            margin: 3px;
+            padding: 3px;
+        }
+
+        input {
+            background-color: #2da9c7; /* Green */
+            border: none;
+            color: #1d1d1d;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        input:hover {
+            background-color: #1b748a;
+        }
+
+        
+
+        #image {
+            width: inherit;
+            border: 3px solid white;
+        }
+
+        #title {
+            font-size: 200%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="info">
+            <span id="title">{FILE_NAME}</span>
+            <span id="subtitle">Uploaded at {UPLOAD_DATE}</span>
+        </div>
+        <div class="img">
+            <img src="{URL}" alt="" srcset="" id="image">
+        </div>
+        <div class="buttons">
+            <a href="{DL_URL}" target="_blank"><input type="button" value="Download"></a>
+            <a href="{URL}" target="_blank"><input type="button" value="Open Image"></a>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
