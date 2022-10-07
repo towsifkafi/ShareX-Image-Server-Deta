@@ -32,14 +32,12 @@ app.get('/sharex', async (req, res) => {
         "URL": "{json:url}"
     }
 
-    var encoded = btoa(JSON.stringify(client_config))
-
     res.writeHead(200, {
         'Content-Disposition': `attachment; filename="${host}.sxcu"`,
         'Content-Type': `text/json`,
     })
 
-    const download = Buffer.from(encoded, 'base64')
+    const download = Buffer.from(JSON.stringify(client_config))
     res.end(download)
 
 })
