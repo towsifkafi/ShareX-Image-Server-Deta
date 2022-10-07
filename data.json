@@ -5,7 +5,7 @@
         {
             "key": "ENV_UPLOAD_KEY",
             "description": "The key that is required to upload from ShareX",
-            "required": true
+            "required": false
         },
         {
             "key": "BINARY_CONTENT_TYPES",
