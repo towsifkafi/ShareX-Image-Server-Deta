@@ -6,7 +6,6 @@
         {
             "key": "ENV_UPLOAD_KEY",
             "description": "The key that is required to upload from ShareX",
-            "value": "passwordd",
             "required": true
         },
         {
